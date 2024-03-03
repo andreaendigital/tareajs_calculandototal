@@ -1,0 +1,1 @@
+Proyecto donde se demuestra manipulación del DOM con querySelector, se modifica la cantidad de productos a comprar y el total a pagar debe mostrar los resultados en función de la cantidad de elementos seleccionados.
