@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafío 1 - JavaScript</title>
+    <link rel="stylesheet" href="./assets/css/estilos.css">
+</head>
+
+<body>
+
+    <section>
+        <div class="card">
+            <div class="img-card"></div>
+              <h6>Laptop Gamer AMD</h6>
+              <p>Precio base: $<span class="precio"></span> </p>
+        
+              <p>Cantidad:
+                <span class="cantidad">0</span>
+            
+                <button onclick="
+    precio = document.querySelector('.precio'); 
+    cantidad = document.querySelector('.cantidad'); 
+    nuevaCantidad = Number(cantidad.innerHTML) + 1; 
+    cantidad.innerHTML = nuevaCantidad; 
+    total = document.querySelector('.total'); 
+    nuevoPrecio = Number(precio.innerHTML)*nuevaCantidad; 
+    total.innerHTML = nuevoPrecio;">+</button>
+
+<button onclick="
+    precio = document.querySelector('.precio'); 
+    cantidad = document.querySelector('.cantidad'); 
+    nuevaCantidad = Number(cantidad.innerHTML) - 1; 
+    cantidad.innerHTML = nuevaCantidad; 
+    total = document.querySelector('.total'); 
+    nuevoPrecio = Number(precio.innerHTML)*nuevaCantidad; 
+    total.innerHTML = nuevoPrecio;">-</button>
+            </p>
+      
+
+
+      
+              <!-- <p>Cantidad:
+                <span class="cantidad">0</span>
+                <button onclick="document.querySelector('.cantidad').innerText++; document.querySelector('.valor-total').innerText = Number(document.querySelector('.precio-inicial').innerText) * Number(document.querySelector('.cantidad').innerText)">+</button>
+                <button onclick="document.querySelector('.cantidad').innerText = Math.max(0, Number(document.querySelector('.cantidad').innerText) - 1); document.querySelector('.valor-total').innerText = Number(document.querySelector('.precio-inicial').innerText) * Number(document.querySelector('.cantidad').innerText)">-</button>
+                <button onclick="incrementarCantidad()">+</button>
+            <button onclick="decrementarCantidad()">-</button>
+            
+            </p> -->
+ 
+            </div>
+
+        </div>
+    </section>
+
+    <div class="total-section">
+        <p>Total a pagar: $<span class="total"></span> </p>
+    </div>
+
+    <script src="./assets/js/index.js">
+      
+
+    </script>
+</body>
+</html>
