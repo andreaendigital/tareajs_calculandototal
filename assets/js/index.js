@@ -1,7 +1,7 @@
 //declarar variables
 
 let precioInicial = 400000;
-let cantidadInicial = 0;
+let cantidadInicial = 1;
 
 let precio = document.querySelector(".precio");
 let cantidad = document.querySelector(".cantidad");
